@@ -1,0 +1,30 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">                
+
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input formControlName="FirstName" placeholder="First Name" name="FirstName" class="form-control"
+                id="firstName">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input formControlName="LastName" placeholder="Last name" name="LastName" class="form-control"
+                id="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" formControlName="Age" placeholder="Age" name="Age" class="form-control" id="age">
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="number" formControlName="Salary" placeholder="salary" name="Salary" class="form-control"
+                id="salary">
+        </div>
+
+        <button class="btn btn-success">Add</button>
+    </form>
+</div>
